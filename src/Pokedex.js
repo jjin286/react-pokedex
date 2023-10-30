@@ -1,18 +1,22 @@
 import Pokecard from "./Pokecard";
+import "./Pokedex.css";
 
-function Pokedex({pokemon}){
+function Pokedex({ pokemon }) {
   return (
-    <div>
-      { pokemon.map(function(poke){
-        <Pokecard
-          id={poke.id}
-          name={poke.name}
-          type={poke.type}
-          xp={poke.base_experience}
-        />
-      })}
+    <div className="Pokedex">
+      <h1>Pokedex</h1>
+      <div className="Pokedex-cardarea">
+        {pokemon.map((poke) => {
+          return <Pokecard
+            id={poke.id}
+            name={poke.name}
+            type={poke.type}
+            exp={poke.base_experience}
+          />;
+        })}
+      </div>
     </div>
-  )
+  );
 }
 
 export default Pokedex;
