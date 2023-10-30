@@ -1,4 +1,4 @@
-.Pokecard-card {
+.Pokecard {
   border: 2px solid black;
   display: flex;
   width: 300px;
@@ -8,7 +8,7 @@
   background-color: rgb(223, 221, 221)
 }
 
-.Pokecard-card-name {
+.Pokecard-name {
   color: blue;
   font-size: 24px;
 }
